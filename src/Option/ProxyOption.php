@@ -11,7 +11,6 @@ namespace Ztk\HttpClient\Option;
 use Ztk\HttpClient\Model\Request;
 use Ztk\HttpClient\Model\Response;
 use Ztk\HttpClient\OptionInterface;
-use Ztk\HttpClient\ProcessorInterface;
 
 /**
  *
@@ -39,10 +38,10 @@ class ProxyOption implements OptionInterface
     public function getOptions(array $options = []): array
     {
         $result = [];
-        if($this->proxy) {
+        if ($this->proxy) {
             $result['proxy'] = $this->proxy;
         }
-        if($this->noProxy) {
+        if ($this->noProxy) {
             $result['no_proxy'] = $this->noProxy;
         }
         return $result;

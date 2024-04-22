@@ -11,7 +11,6 @@ namespace Ztk\HttpClient\Option\Auth;
 use Ztk\HttpClient\Model\Request;
 use Ztk\HttpClient\Model\Response;
 use Ztk\HttpClient\OptionInterface;
-use Ztk\HttpClient\ProcessorInterface;
 
 /**
  *

@@ -8,11 +8,10 @@ declare(strict_types=1);
 
 namespace Ztk\HttpClient\Option;
 
+use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Ztk\HttpClient\Model\Request;
 use Ztk\HttpClient\Model\Response;
 use Ztk\HttpClient\OptionInterface;
-use Ztk\HttpClient\ProcessorInterface;
-use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
  * Configure TLS options
