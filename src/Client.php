@@ -124,7 +124,7 @@ class Client
     private function hookResponse(Response &$response, array $opts = []): bool
     {
         $result = true;
-        if (empty($this->option)) {
+        if (!empty($this->option)) {
 
             foreach ($this->option as $option) {
                 if (!$option->processResponse($response, $opts)) {
