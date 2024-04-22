@@ -29,4 +29,21 @@ interface ProcessorInterface
      * @return array
      */
     public function processResponse(Response &$response, array $opts = []): array;
+
+
+    /**
+     * This shall return the processors identifier set by hooman
+     * @see \Ztk\HttpClient\Model\Response::$info where the identifier shall be used to store relevant data
+     * @return string
+     */
+    public function getIdentifier() : string;
+
+    /**
+     * set the processors identifier
+     * only useful really if the processor adds custom data
+     * insteadof overwriting content
+     * @param string $identifier
+     * @return void
+     */
+    public function setIdentifier(string $identifier) : void;
 }
