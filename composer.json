@@ -1,0 +1,43 @@
+{
+  "name" : "cztk/php-http-client",
+  "version" : "0.0.1",
+  "description": "Just having some fun with php httpclient, nothing much to see",
+  "keywords": [
+  ],
+  "homepage": "https://github.com/cztk/php-httpclient",
+  "bugs": {
+    "url": "",
+    "email": "support@ztk.me"
+  },
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "email": "support@ztk.me",
+      "name": "Christoph Zysik",
+      "homepage": "https://ztk.me",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/cztk/php-httpclient",
+    "source": "https://github.com/cztk/php-httpclient"
+  },
+  "time": "2024-04-22 04:00:00",
+
+  "autoload": {
+    "psr-4": {
+      "Ztk\\HttpClient\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">8.2",
+    "symfony/http-client": ">6.4-stable",
+    "psr/log": "^3.0"
+  },
+  "require-dev": {
+    "monolog/monolog": ">3.5-stable"
+  },
+  "suggest": {
+    "monolog/monolog": ">3.5.0-stable"
+  }
+}
