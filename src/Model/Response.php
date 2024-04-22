@@ -21,14 +21,18 @@ use Symfony\Contracts\HttpClient\ResponseInterface;
 class Response
 {
     public string|null $content;
+
     /**
      * if a processor wants to add $extra['json'] = array
      * fine
      * @var array
      */
     public array $extra = [];
+
     public array|null $headers;
+
     public array|null $info = [];
+
     public Request|null $request;
     public int|null $statusCode;
 
